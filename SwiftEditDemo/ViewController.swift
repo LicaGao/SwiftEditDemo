@@ -95,10 +95,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
         let fromRow = (sourceIndexPath as NSIndexPath).row
         let toRow = (destinationIndexPath as NSIndexPath).row
-        let reminder = ints[fromRow]
+        let int = ints[fromRow]
         
         ints.remove(at: fromRow)
-        ints.insert(reminder, at: toRow)
+        ints.insert(int, at: toRow)
     }
 }
 
